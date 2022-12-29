@@ -1,5 +1,5 @@
 #!/bin/sh
 
-pushd ~/nixos-conf
+pushd ~/nixos-config
 sudo nixos-rebuild switch -I nixos-config=./configuration.nix
 popd

@@ -103,6 +103,8 @@
     gnupg
     pinentry
     unzip
+    screen
+    emacs
   ];
 
   environment.sessionVariables = rec {
