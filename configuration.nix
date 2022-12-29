@@ -106,6 +106,7 @@
     screen
     emacs
     lutris
+    p7zip
   ];
 
   environment.sessionVariables = rec {
