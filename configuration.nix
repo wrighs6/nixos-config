@@ -105,6 +105,7 @@
     unzip
     screen
     emacs
+    lutris
   ];
 
   environment.sessionVariables = rec {
