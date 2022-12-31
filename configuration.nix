@@ -97,16 +97,16 @@
     protonup-ng
     prismlauncher
     mullvad
-    unrar
     wine
     git-crypt
     gnupg
     pinentry
-    unzip
     screen
-    emacs
     lutris
-    p7zip
+    emacs
+    libsForQt5.ark
+    unrar
+    python3
   ];
 
   environment.sessionVariables = rec {
