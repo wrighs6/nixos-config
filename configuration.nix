@@ -11,6 +11,8 @@
       ./hardware-configuration.nix
     ];
 
+  nix.settings.auto-optimise-store = true;
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -96,7 +98,6 @@
     steam
     protonup-ng
     prismlauncher
-    mullvad
     wine
     git-crypt
     gnupg
@@ -117,9 +118,9 @@
     dolphin-emu-beta
     gdb
     valgrind
-    ruby
-    virtualbox
-    vagrant
+    runelite
+    libreoffice-fresh
+    zotero
   ];
 
   environment.sessionVariables = rec {
@@ -145,7 +146,8 @@
 
   programs.steam.enable = true;
 
-  services.mullvad-vpn.enable = true;
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "wrighs6" ];
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
