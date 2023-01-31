@@ -55,7 +55,7 @@
   };
 
   # Enable CUPS to print documents.
-  #services.printing.enable = true;
+  services.printing.enable = true;
 
   # Enable sound with pipewire.
   sound.enable = true;
@@ -110,7 +110,6 @@
     python3
     cataclysm-dda
     strawberry
-    schismtracker
     calibre
     qtspim
     texlive.combined.scheme-full
@@ -118,9 +117,10 @@
     dolphin-emu-beta
     gdb
     valgrind
-    runelite
     libreoffice-fresh
     zotero
+    zig
+    vlc
   ];
 
   environment.sessionVariables = rec {
