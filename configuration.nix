@@ -81,7 +81,7 @@
   users.users.wrighs6 = {
     isNormalUser = true;
     description = "Stephen Wright";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "wireshark" ];
     #packages = with pkgs; [];
   };
 
@@ -107,7 +107,6 @@
     emacs
     libsForQt5.ark
     unrar
-    python3
     cataclysm-dda
     strawberry
     calibre
@@ -117,10 +116,18 @@
     dolphin-emu-beta
     gdb
     valgrind
-    libreoffice-fresh
-    zotero
     zig
     vlc
+    jdk17
+    jdk8
+    gparted
+    nodejs
+    python311
+    pipenv
+    nicotine-plus
+    wireshark
+    kate
+    goodvibes
   ];
 
   environment.sessionVariables = rec {
