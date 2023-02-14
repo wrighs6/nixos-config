@@ -127,7 +127,8 @@
     nicotine-plus
     wireshark
     kate
-    goodvibes
+    libsForQt5.qtstyleplugin-kvantum
+    xspim
   ];
 
   environment.sessionVariables = rec {
@@ -141,6 +142,7 @@
     PATH = [ 
       "\${XDG_BIN_HOME}"
     ];
+    QT_STYLE_OVERRIDE = "kvantum";
   };
 
   # Some programs need SUID wrappers, can be configured further or are
