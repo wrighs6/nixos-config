@@ -185,7 +185,7 @@
 
     programs.helix = {
       enable = true;
-      settings.theme = "gruvbox";
+      settings.theme = "nord";
     };
 
     programs.gpg.enable = true;
